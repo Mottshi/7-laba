@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Shelter Adopt cats Lucy Greta Oscar bla bla bla more and more some words for good optimization">
+    <meta name="keywords" content="Shelter Adopt Cats">
+    <title>Shelter</title>
+    <link rel="stylesheet" href="./style/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Inter:300,regular,700&display=swap" rel="stylesheet" />
+    <link rel="website icon" href="./images/favicon/favicon.ico">
+    <link rel="stylesheet" href="./css/fontawesome-all.css">
+</head>
+<body>
+    <header>
+        <div class="_container">
+            <div class="header__logo">
+                <img src="./images/icon-cat-64.png" alt="Logo"><span>&nbsp;Shelter</span>
+            </div>
+            <div class="header__menu">
+                <nav>
+                    <ul>
+                        <li>Home</li>
+                        <li>About us</li>
+                        <li>Our friends</li>
+                    </ul>
+                </nav>
+            </div>
+            <!-- Burger Menu -->
+            <div class="header__burger-menu">
+                <div class="header__burger-button"><span class="fa-xl fa-solid fa-bars"></span></div>
+                <div class="header__burger-main">
+                    <nav class="header__burger-inner">
+                        <ul>
+                            <li>Home</li>
+                            <li>About us</li>
+                            <li>Our friends</li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="_container">
+                <div class="hero__inner">
+                    <h1>Our homeless friends</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum minima doloremque voluptates obcaecati in perspiciatis aperiam corrupti officia architecto distinctio ipsam id ducimus aliquid, amet ullam quae a repellendus cum!</p>
+                    <div class="button">
+                        <button>Let's get acquainted<span class="hero__span fa-sharp fa-solid fa-arrow-right"></span></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="gallery">
+            <div class="_container">
+                <div class="gallery__image">
+                    <div class="gallery__image-inner">
+                        <p>Ralph</p>
+                        <br>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, inventore?</p>
+                    </div>
+                </div>
+                <div class="gallery__image">
+                    <div class="gallery__image-inner">
+                        <p>Greta</p>
+                        <br>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, corrupti!</p>
+                    </div>
+                </div>
+                <div class="gallery__image">
+                    <div class="gallery__image-inner">
+                        <p>Oscar</p>
+                        <br>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea, voluptas.</p>
+                    </div>
+                </div>
+                <div class="gallery__image">
+                    <div class="gallery__image-inner">
+                        <p>Lucy</p>
+                        <br>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque, vero!</p>
+                    </div>
+                </div>
+                <div class="gallery__image">
+                    <div class="gallery__image-inner">
+                        <p>Jeff</p>
+                        <br>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, tempora?</p>
+                    </div>
+                </div>
+                <div class="gallery__image">
+                    <div class="gallery__image-inner">
+                        <p>Tessa</p>
+                        <br>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, commodi.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="_container">
+            <div class="footer__inner">
+                <div class="footer__block">
+                    <ul>
+                        <li>Contact</li>
+                        <li><span class="fa-solid fa-house"></span>New York, NY 10012, US</li>
+                        <li><span class="fa-solid fa-envelope"></span>shelter@info.com</li>
+                        <li><span class="fa-solid fa-phone"></span>+01&nbsp;234&nbsp;567&nbsp;88</li>
+                    </ul>
+                </div>
+                <div class="footer__block">
+                    <ul>
+                        <li>Pages</li>
+                        <li>About us</li>
+                        <li>Cats</li>
+                        <li>Other</li>
+                    </ul>
+                </div>
+                <div class="footer__block">
+                    <ul>
+                        <li>Social</li>
+                        <li><span class="fa-brands fa-instagram"></span>&nbsp;Instagram</li>
+                        <li><span class="fa-brands fa-facebook"></span>&nbsp;Facebook</li>
+                        <li><span class="fa-brands fa-twitter"></span>&nbsp;Twitter</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+<script>
+    document.querySelector('.header__burger-button').onclick = function() {
+        document.querySelector('.header__burger-inner').classList.toggle('active');
+        document.querySelector('.fa-bars').classList.toggle('fa-xmark')
+    }
+</script>
+</html>

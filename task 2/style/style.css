@@ -1,0 +1,619 @@
+html, body, h1, h2 li, ul, a {
+    padding: 0;
+    margin: 0;
+}
+html, body {
+    font-family: 'PT Sans';
+    font-weight: 400;
+    font-size: 14px;
+    color: #FFFFFF;
+    background-color: #000000;
+}
+h2 {
+    font-family: 'Playfair Display SC';
+    font-weight: 700;
+    font-size: 36px;
+    text-transform: uppercase;
+    margin: 0 auto;
+    text-align: center;
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: unset;
+}
+.line {
+    width: 120px;
+    height: 1px;
+    background-color: #FFFFFF;
+    margin: 40px auto;
+}
+button {
+    margin: 0;
+    padding: 12px 24px;
+    background-color: transparent;
+    border: 1px solid #FFFFFF;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    font-size: 18px;
+    max-width: max-content;
+    overflow: hidden;
+}
+.wrapper {
+    min-width: 100%;
+    overflow: hidden;
+}
+._container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.arrival ._container,
+.brands ._container,
+.footer > ._container {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+@media screen and (min-width: 320px) {
+    ._container {
+        padding: 0 14px;
+    }
+    h2 {
+        font-size: 26px;
+    }
+}
+@media screen and (min-width: 480px) {
+    ._container {
+        padding: 0 24px;
+    }
+}
+@media screen and (min-width: 1024px) {
+    h2 {
+        font-size: 36px;
+    }
+}
+
+/* ========== HEADER ========== */
+.header__block ._container {
+    display: flex;
+    align-items: center;
+    color: #969696;
+    justify-content: space-between;
+}
+.header__block:nth-child(2) { 
+    background-color: #0F0F0F;
+    width: 100%;
+}
+.header__block:nth-child(2) ._container {
+    justify-content: space-between;
+}
+.header__contacts-login ul {
+    display: flex;
+}
+.header__contacts ul {
+    flex-wrap: wrap;
+    padding: 14px 0;
+}
+.header__contacts-login ul li {
+    margin: 0px 7px;
+}
+.header__contacts-login ul li:first-child {
+    margin-left: 0;
+}
+.header__contacts-login ul li:last-child {
+    margin-right: 0;
+}
+.header__login {
+    display: flex;
+    justify-content: right;
+}
+.header__login span:hover,
+.header__burger-menu-login span:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+.header__logo,
+.header__menu {
+    width: 50%;
+}
+.header__logo {
+    padding: 16px 0;
+}
+@media screen and (max-width: 768px) {
+    .header__block:nth-child(2) {
+        position: fixed;
+    }
+}
+@media screen and (max-width: 1023.98px) {
+    .header__logo,
+    .header__menu {
+        width: unset;
+}
+}
+.header__menu ul {
+    display: flex;
+    text-transform: uppercase;
+    justify-content: right;
+}
+.header__menu ul li {
+    display: inherit;
+    align-items: center;
+    transition: 0.2s ease; 
+}
+.header__menu ul li:hover {
+    color: #FFFFFF;
+    background-color: #1F1F1F;
+    transition: 0.2s ease; 
+}
+.header__menu ul a {
+    padding: 31px 20px;
+    display: flex;
+}
+.header__menu ul a img { min-width: 22px; min-height: 22px; }
+@media screen and (max-width: 1024px) {
+    
+}
+/* --- Burger Menu --- */
+.header__burger-menu {
+    display: flex;
+    flex-direction: column;
+}
+.header__burger-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 36px;
+    cursor: pointer;
+    padding: 10px;
+}
+.header__burger-button div,
+.header__burger-button div::before,
+.header__burger-button div::after {
+    position: absolute;
+    background-color: #FFFFFF;
+    width: 30px;
+    height: 2px;
+}
+.header__burger-button div::before {
+    content: " ";
+    top: -10px;
+}
+.header__burger-button div::after {
+    content: " ";
+    top: 10px;
+}
+.header__burger-menu-inner {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    color: #969696;
+    text-transform: uppercase;
+    font-size: 20px;
+    width: 240px;
+    position: absolute;
+    right: 0;
+    top: 86px;
+    background-color: #0F0F0F;
+    height: 91vh;
+    /* visibility: hidden; */
+}
+/* ---------------------------------- */
+
+
+.active {
+    display: flex;
+}
+
+
+/* ---------------------------------- */
+.header__burger-menu-inner ul li {
+    padding: 20px 24px;
+}
+.header__burger-menu-inner > ul:last-child > li:first-child {
+    padding: 20px 0;
+}
+.header__burger-menu-inner > ul:last-child > li:first-child > ul > li {
+    padding: 4px 24px;
+}
+.header__burger-menu-inner > ul:first-child li {
+    transition: 0.2s ease;
+    cursor: pointer;
+}
+.header__burger-menu-inner > ul:first-child li:hover {
+    color: #FFFFFF;
+    background-color: #1F1F1F;
+    transition: 0.2s ease; 
+}
+.header__burger-menu-inner ul:last-child {
+    text-transform: none;
+    font-size: 14px;
+}
+.header__burger-menu-inner ul li a,
+.header__burger-menu-inner ul li {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    text-align: right;
+}
+.header__burger-menu-login {
+    text-transform: none;
+}
+@media screen and (min-width: 320px) {
+    .header__block:nth-child(1),
+    .header__menu {
+        display: none;
+    }
+}
+@media screen and (min-width: 768px) {
+    .header__block:nth-child(1),
+    .header__menu {
+        display: unset;
+    }
+    .header__burger-menu {
+        display: none;
+    }
+}
+
+/* ========== HERO ========== */
+.hero {
+    background-image: url('/images/hero/background.webp');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+}
+.hero ._container { 
+    display: inherit;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 160px;
+    margin-bottom: 160px;
+}
+.hero__logo {
+    display: inherit;
+    width: 100%;
+    justify-content: center;
+}
+.hero__logo img {
+    width: 320px;
+    height: 320px;
+}
+.hero__text {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 16px;
+    margin: 80px 20% 0;
+}
+@media screen and (min-width: 320px) {
+    .hero ._container {
+        margin-top: 110px;
+    }
+    .hero__logo img {
+        width: 270px;
+        height: 270px;
+    }
+    .hero__text {
+        font-size: 14px;
+        margin: 70px 0;
+    }
+    .hero ._container {
+        margin-bottom: 100px;
+    }
+}
+@media screen and (min-width: 480px) {
+    .hero ._container {
+        margin-top: 160px;
+    }
+    .hero__logo img {
+        width: 320px;
+        height: 320px;
+    }
+    .hero__text {
+        font-size: 16px;
+        margin: 80px 20% 0;
+    }
+    .hero ._container {
+        margin-bottom: 160px;
+    }
+}
+
+/* ========== SEASON ========== */
+.season__row {
+    display: flex;
+    flex-flow: row wrap;
+}
+.watch__img {
+    background-image: url('/images/watch.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 200px;
+    height: 250px;
+}
+.watch {
+    margin: 0 10px;
+    font-family: 'Playfair Display SC';
+}
+.watch img {
+    width: 250px;
+    height: 325px;
+}
+.watch p:nth-child(2) {
+    font-size: 18px;
+}
+.watch p:nth-child(3) {
+    font-size: 16px;
+    font-weight: 700;
+}
+.season__button {
+    cursor: pointer;
+    width: unset;
+    margin: 0 auto;
+    transition: 0.2s ease;
+}
+.season__button:hover {
+    background-color: #FFFFFF;
+    color: #000000;
+    transition: 0.2s ease;
+}
+.season__watches {
+    display: inherit;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    /* padding: 90px; */
+    margin: 30px 0;
+}
+.season__prices {
+    display: inherit;
+    justify-content: space-around;
+    flex-flow: row wrap;
+    width: 100%;
+}
+.season__catalogue {
+    width: 40%;
+    height: 500px;
+    background-image: url('/images/season/img1.webp');
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* padding: 90px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+.season__row:nth-child(2) {
+    flex-flow: row-reverse wrap;
+}
+.season__image {
+    width: 40%;
+    height: 500px;
+    background-image: url('/images/season/img2.webp');
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.season__text {
+    width: 60%;
+    min-width: 300px;
+    margin: 40px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.season__text p {
+    max-width: 600px;
+    margin: 0 50px 40px;
+}
+@media screen and (min-width: 320px) {
+    .watch img {
+        width: 200px;
+        height: 250px;
+    }
+    .season__watches {
+        width: 100%;
+        padding: 0;
+    }
+    .season__catalogue {
+        width: 100%;
+        height: 300px;
+        padding: 20px;
+        justify-content: center;
+    }
+    .season__image {
+        width: 100%;
+        height: 30vh;
+    }
+    .season__text {
+        width: 100%;
+    }
+}
+@media screen and (min-width: 768px) {
+    .watch__img {
+        min-width: 220px;
+        min-height: 275px; 
+    }
+    .season__catalogue {
+        width: 100%;
+        height: 500px;
+    }
+}        
+@media screen and (min-width: 1024px) {
+    .season__watches {
+        padding: 0px;
+        width: 60%;
+    }
+    .season__catalogue {
+        width: 40%;
+        padding: 0;
+        height: 70vh;
+    }
+    .season__image {
+        width: 40%;
+        height: 500px;
+    }
+    .season__text {
+        width: 60%;
+    }
+}
+@media screen and (min-width: 1100px) {
+    .watch__img {
+        min-width: 200px;
+        min-height: 250px; 
+    }
+}
+@media screen and (min-width: 1440px) {
+    .season__watches,
+    .season__catalogue {
+        padding: 0px;
+    }
+    .season__catalogue {
+        justify-content: flex-end;
+        padding-bottom: 90px;
+    }
+}
+@media screen and (min-width: 1520px) {
+    .watch__img {
+        min-width: 260px;
+        min-height: 325px;
+    }
+}
+
+
+/* ========== ARRIVAL ========== */
+.arrival ._container {
+    display: flex;
+    flex-direction: column;
+}
+.arrival__watches-block {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.watches-block {
+    display: inherit;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* ========== BRANDS ========== */
+.brands {
+    background-color: #0F0F0F;
+}
+.brands ._container {
+    display: flex;
+    flex-direction: column;
+}
+.brands__brands {
+    display: inherit;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.brands__logo img {
+    width: 255px;
+    height: 94px;
+}
+@media screen and (min-width: 320px) {
+    .brands__brands {
+        justify-content: center;
+    }
+}
+@media screen and (min-width: 1068px) {
+    .brands__brands {
+        justify-content: space-between;
+    }
+}
+
+/* ========== FOOTER ========== */
+.footer {
+    background-image: url('/images/footer/background.webp');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-size: 12px;
+}
+.footer__block {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.footer__block > ._container {
+    padding-top: 17px;
+    padding-bottom: 17px;
+}
+.footer__block-inner1 {
+    max-width: 400px;
+    min-width: 260px;
+    flex: 1;
+    padding: 20px 20px 40px;
+}
+.footer__block:nth-child(2) {
+    width: 100%;
+    background-color: #000000;
+}
+.footer__block:nth-child(2) ._container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.footer__block-title {
+    margin-bottom: 30px;
+    font-size: 24px;
+    font-family: 'Playfair Display';
+    font-weight: 400;
+    text-transform: uppercase;
+}
+.footer__block-main > p {
+    margin-bottom: 40px;
+}
+.footer__block-inner1:nth-child(2) .footer__block-main {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -10px;
+}
+.footer__categories {
+    background-color: #0F0F0F;
+    padding: 10px 20px;
+    margin: 10px;
+    cursor: pointer;
+    transition: 0.2s ease; 
+}
+.footer__categories:hover {
+    background-color: #FFFFFF;
+    color: #000000;
+    transition: 0.2s ease; 
+}
+.footer__inputs {
+    display: flex;
+    flex-wrap: wrap;
+}
+input[type="button"] {
+    background-color: #0F0F0F;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    cursor: pointer;
+    border: none;
+    transition: 0.2s ease;
+}
+input[type="button"]:hover {
+    background-color: #FFFFFF;
+    color: #000000;
+    transition: 0.2s ease;
+}
+input[type="text"] {
+    background-color: #FFFFFF66;
+    color: #FFFFFF;
+    padding: 10px 20px;
+    outline: none;
+    border: none;
+}
+input::placeholder {
+    color: #ffffff86;
+}
